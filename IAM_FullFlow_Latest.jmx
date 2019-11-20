@@ -498,6 +498,13 @@ vars.put(&apos;encodedstring&apos;,encodedstring);
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">redirect_uri</stringProp>
               </elementProp>
+              <elementProp name="acr_values" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">organization:36DCF07D-F418-4FE8-9D9F-1F91D97456FB tenant:ef663ad2-f982-42f3-b096-950eb1e5f093</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">acr_values</stringProp>
+              </elementProp>
             </collectionProp>
           </elementProp>
           <stringProp name="HTTPSampler.domain">${URL}</stringProp>
@@ -665,6 +672,13 @@ vars.put(&apos;encodedstring&apos;,encodedstring);
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">redirect_uri</stringProp>
+              </elementProp>
+              <elementProp name="acr_values" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">organization:36DCF07D-F418-4FE8-9D9F-1F91D97456FB tenant:ef663ad2-f982-42f3-b096-950eb1e5f093</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">acr_values</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
