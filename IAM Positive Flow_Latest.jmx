@@ -92,7 +92,7 @@
           </elementProp>
           <elementProp name="zipCode" elementType="Argument">
             <stringProp name="Argument.name">zipCode</stringProp>
-            <stringProp name="Argument.value">560120</stringProp>
+            <stringProp name="Argument.value">20191</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="country" elementType="Argument">
@@ -233,6 +233,21 @@
           <elementProp name="Orgadmin_Role" elementType="Argument">
             <stringProp name="Argument.name">Orgadmin_Role</stringProp>
             <stringProp name="Argument.value">92D7EFA8-E5C8-470A-A0D4-3F8DB6069FB7</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="TenantID" elementType="Argument">
+            <stringProp name="Argument.name">TenantID</stringProp>
+            <stringProp name="Argument.value">ef663ad2-f982-42f3-b096-950eb1e5f093</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="OrgAdmin" elementType="Argument">
+            <stringProp name="Argument.name">OrgAdmin</stringProp>
+            <stringProp name="Argument.value">FE9B0FCE-AFF2-4697-B422-DE4D411DCD69</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="UserID" elementType="Argument">
+            <stringProp name="Argument.name">UserID</stringProp>
+            <stringProp name="Argument.value">2CA59306-CD88-456A-8B1D-123162263E95</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -585,7 +600,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <stringProp name="script"></stringProp>
         </BeanShellPreProcessor>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Password grant type_OrgAPP: SystemAppUser: Login Request (Only Org)" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Password grant type_OrgAPP: SystemAppUser: Login Request (Only Org)" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="client_id" elementType="HTTPArgument">
@@ -639,7 +654,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
               </elementProp>
               <elementProp name="acr_values" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">organization:36DCF07D-F418-4FE8-9D9F-1F91D97456FB</stringProp>
+                <stringProp name="Argument.value">organization:36DCF07D-F418-4FE8-9D9F-1F91D97456FB tenant:ef663ad2-f982-42f3-b096-950eb1e5f093</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">acr_values</stringProp>
@@ -694,7 +709,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <stringProp name="script"></stringProp>
         </BeanShellPreProcessor>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Password grant type_OrgAdmin: Login Request (Org and Entity)" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Password grant type_OrgAdmin: Login Request (Org and Entity)" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="client_id" elementType="HTTPArgument">
@@ -912,7 +927,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <stringProp name="script"></stringProp>
         </BeanShellPreProcessor>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Password grant type_NormalAppUser: Login Request (Only Entity, No Org)" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Password grant type_NormalAppUser: Login Request (Only Entity, No Org)" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="client_id" elementType="HTTPArgument">
@@ -1782,7 +1797,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <stringProp name="script"></stringProp>
         </BeanShellPreProcessor>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="SYSAPP: sysuser:(Organization)P: Get all Organization details" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="SYSAPP: sysuser:(Organization)P: Get all Organization details" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
@@ -1858,7 +1873,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
   &quot;firstName&quot;: &quot;OrgUser_${__time}&quot;,&#xd;
   &quot;middleName&quot;: &quot;Mid_${__time}&quot;,&#xd;
   &quot;lastName&quot;: &quot;Last_${__time}&quot;,&#xd;
-  &quot;email&quot;: &quot;ruchiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiit@aegal-us.com&quot;,&#xd;
+  &quot;email&quot;: &quot;Test${__time}@google.com&quot;,&#xd;
   //&quot;Test${__time}@google.com&quot;,&#xd;
   &quot;phoneNumber&quot;: &quot;5656565656&quot;,&#xd;
   &quot;password&quot;: &quot;${Password}&quot;,&#xd;
@@ -1939,8 +1954,17 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
             <intProp name="Assertion.test_type">2</intProp>
           </ResponseAssertion>
           <hashTree/>
+          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+            <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+            <stringProp name="RegexExtractor.refname">SysGeneratedOrgID</stringProp>
+            <stringProp name="RegexExtractor.regex">&quot;response&quot;: &quot;(.+?)&quot;</stringProp>
+            <stringProp name="RegexExtractor.template">$1$</stringProp>
+            <stringProp name="RegexExtractor.default"></stringProp>
+            <stringProp name="RegexExtractor.match_number">0</stringProp>
+          </RegexExtractor>
+          <hashTree/>
           <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="Beanshell for setproperty" enabled="true">
-            <stringProp name="BeanShellAssertion.query">${__setProperty(OrgID1, ${OrgID1})};</stringProp>
+            <stringProp name="BeanShellAssertion.query">${__setProperty(SysGeneratedOrgID, ${SysGeneratedOrgID})};</stringProp>
             <stringProp name="BeanShellAssertion.filename"></stringProp>
             <stringProp name="BeanShellAssertion.parameters"></stringProp>
             <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
@@ -3274,7 +3298,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <stringProp name="script"></stringProp>
         </BeanShellPreProcessor>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="SYSAPP: sysuser:(User)P: Get all users detail" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="SYSAPP: sysuser:(User)P: Get all users detail" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
@@ -3339,7 +3363,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="SYSAPP: sysuser:(User)P: Create a SignUp user" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="SYSAPP: sysuser:(User)P: Create a SignUp user" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -3350,6 +3374,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
   &quot;middleName&quot;: &quot;SMid_${__time}&quot;,&#xd;
   &quot;lastName&quot;: &quot;SLast_${__time}&quot;,&#xd;
   &quot;email&quot;: &quot;Signup_${__time}@regal-us.com&quot;,&#xd;
+  //Signup_${__time}@regal-us.com&#xd;
   &quot;phoneNumber&quot;: &quot;5656565656&quot;,&#xd;
   &quot;password&quot;: &quot;${Password}&quot;,&#xd;
   &quot;organizationName&quot;: &quot;org_${__time}&quot;,&#xd;
@@ -3430,7 +3455,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="SYSAPP: sysuser:(User)P: Create a user" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="SYSAPP: sysuser:(User)P: Create a user" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -3442,6 +3467,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
   &quot;middleName&quot;: &quot;Mid_${__time}&quot;,&#xd;
   &quot;lastName&quot;: &quot;Last_${__time}&quot;,&#xd;
   &quot;email&quot;: &quot;user_${__time}@regal-us.com&quot;,&#xd;
+  //user_${__time}@regal-us.com&#xd;
   &quot;phoneNumber&quot;: &quot;5656565656&quot;,&#xd;
   &quot;type&quot;: &quot;${type2}&quot;,&#xd;
   &quot;password&quot;: &quot;${Password}&quot;,&#xd;
@@ -3651,7 +3677,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ORG APP: SystemApp User(Assigned to any Org)_Positive Flow" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ORG APP: SystemApp User(Assigned to any Org)_Positive Flow" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -3664,7 +3690,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="P(M) Login using Org Admin to ORG admin" enabled="true">
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="P(M) Login using Org Admin to ORG admin" enabled="false">
           <intProp name="ActionProcessor.action">3</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
           <stringProp name="ActionProcessor.duration">0</stringProp>
@@ -3678,8 +3704,8 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <stringProp name="HTTPSampler.port">UFT-8</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">${Users}/${UserID}/organizations/${__property(Organization_ID)}</stringProp>
-          <stringProp name="HTTPSampler.method">DELETE</stringProp>
+          <stringProp name="HTTPSampler.path">${Users}/${UserID}/organizations/${Organization_ID}</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -3714,7 +3740,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
             <collectionProp name="Asserion.test_strings">
               <stringProp name="-1514160316">&quot;${__property(requestStatus)}&quot;: 1</stringProp>
             </collectionProp>
@@ -3743,7 +3769,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <stringProp name="HTTPSampler.port">UFT-8</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">${Organizations}/${Organization_Id}/users/${UserID1}/roles/${OrgRole_Id}</stringProp>
+          <stringProp name="HTTPSampler.path">${Organizations}/${Organization_ID}/users/${UserID}/roles/${Orgadmin_Role}</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3754,9 +3780,9 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code201" enabled="true">
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code200" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="-1146597534">${Response201}</stringProp>
+              <stringProp name="-1146597565">${Response200}</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
@@ -3764,7 +3790,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
             <intProp name="Assertion.test_type">2</intProp>
           </ResponseAssertion>
           <hashTree/>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion-Status 1" enabled="true">
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion-Status 1" enabled="false">
             <collectionProp name="Asserion.test_strings">
               <stringProp name="-1514160316">&quot;${__property(requestStatus)}&quot;: 1</stringProp>
             </collectionProp>
@@ -3800,7 +3826,72 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="P(M) Login using System User into Org APP " enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser: (Entity)P: Assign Entity to a systemuser" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${SwaggerURL}</stringProp>
+          <stringProp name="HTTPSampler.port">UFT-8</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${Users}/${UserID}/tenants/${TenantID}</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code200" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1146597565">${Response200}</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1514160316">&quot;${__property(requestStatus)}&quot;: 1</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json; charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Cache-Control" elementType="Header">
+                <stringProp name="Header.name">Cache-Control</stringProp>
+                <stringProp name="Header.value">no-cache</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${__property(OrgAdmin_Access_Token)}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="P(M) Login using System User into Org APP " enabled="false">
           <intProp name="ActionProcessor.action">3</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
           <stringProp name="ActionProcessor.duration">0</stringProp>
@@ -3912,7 +4003,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <stringProp name="HTTPSampler.port">UFT-8</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">${Organizations}/${__property(Organization_ID)}</stringProp>
+          <stringProp name="HTTPSampler.path">${Organizations}/${Organization_ID}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -4052,13 +4143,13 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
   &quot;name&quot;: &quot;Entity_${__time}&quot;,&#xd;
   &quot;address&quot;: {&#xd;
     &quot;line1&quot;: &quot;${line1}&quot;,&#xd;
-    &quot;line2&quot;: &quot;${line2}&quot;&#xd;
-    &quot;line3&quot;: &quot;${line3}&quot;&#xd;
+    &quot;line2&quot;: &quot;${line2}&quot;,&#xd;
+    &quot;line3&quot;: &quot;${line3}&quot;,&#xd;
     &quot;city&quot;: &quot;${city}&quot;,&#xd;
     &quot;state&quot;: &quot;${state}&quot;,&#xd;
     &quot;zipCode&quot;: &quot;${zipCode}&quot;,&#xd;
-    &quot;country&quot;: &quot;${country}&quot;&#xd;
-    &quot;countryCode&quot;: &quot;${countryCode}&quot;&#xd;
+    &quot;country&quot;: &quot;${country}&quot;,&#xd;
+    &quot;countryCode&quot;: &quot;${countryCode}&quot;,&#xd;
   }&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
@@ -4135,7 +4226,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(Organization)P:Get Entity details by EntityID" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(Organization)P:Get Entity details by EntityID" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
@@ -4200,7 +4291,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(Organization)P:Edit Entity for the organization" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(Organization)P:Edit Entity for the organization" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -4285,7 +4376,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(Organization)P:Get all Entity details of organization" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(Organization)P:Get all Entity details of organization" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -4385,7 +4476,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <stringProp name="HTTPSampler.port">UFT-8</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">${Tenants}/${TenantID1}/resources/${ResourceIAM}</stringProp>
+          <stringProp name="HTTPSampler.path">${Tenants}/${TenantID}/resources/${ResourceIAM}</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -4604,7 +4695,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(User)P: Edit a particular user detail" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(User)P: Edit a particular user detail" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -4680,7 +4771,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(User)P: Get a particular user detail" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(User)P: Get a particular user detail" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
@@ -4745,7 +4836,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(User)P: Get a particular user detail by Email ID" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(User)P: Get a particular user detail by Email ID" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
@@ -4882,7 +4973,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <stringProp name="script"></stringProp>
         </BeanShellPreProcessor>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(Roles)P: Get Roles form a particular Organization" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(Roles)P: Get Roles form a particular Organization" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
@@ -4947,7 +5038,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser(Role)P:Create a custom orgrolerole for organization " enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser(Role)P:Create a custom orgrolerole for organization " enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -5035,7 +5126,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(Roles)P: Get particular role details" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(Roles)P: Get particular role details" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
@@ -5100,7 +5191,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(Roles)P: Edit a Role for Organization" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(Roles)P: Edit a Role for Organization" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -5249,7 +5340,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <stringProp name="script"></stringProp>
         </BeanShellPreProcessor>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(User)P: Assign OrgRole to user" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(User)P: Assign OrgRole to user" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
@@ -5314,7 +5405,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(Roles)P: Assign a Permission to an existing Role" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(Roles)P: Assign a Permission to an existing Role" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
@@ -5451,7 +5542,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <stringProp name="script"></stringProp>
         </BeanShellPreProcessor>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="P:Create User for the entity" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser(User):P:Create User for the entity" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -5459,9 +5550,9 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
   &quot;firstName&quot;: &quot;${__RandomString(5,ABCDEF,)}&quot;,&#xd;
-  &quot;middleName&quot;: &quot;${__RandomString(3,ABCDEF,)}&quot;&#xd;
-  &quot;lastName&quot;: &quot;${__RandomString(4,ABCDEF,)}&quot;&#xd;
-  &quot;email&quot;:&quot;${__RandomString(5,ABCDEF,)}@gmail.com&quot;&#xd;
+  &quot;middleName&quot;: &quot;${__RandomString(3,ABCDEF,)}&quot;,&#xd;
+  &quot;lastName&quot;: &quot;${__RandomString(4,ABCDEF,)}&quot;,&#xd;
+  &quot;email&quot;:&quot;${__RandomString(5,ABCDEF,)}@gmail.com&quot;,&#xd;
   &quot;phoneNumber&quot;: &quot;${__RandomString(10,123456,)}&quot;,&#xd;
   &quot;type&quot;: &quot;${type1}&quot;,&#xd;
   &quot;password&quot;: &quot;${__RandomString(10,ABC@ef,)}&quot;,&#xd;
@@ -5474,7 +5565,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <stringProp name="HTTPSampler.port">UFT-8</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">${Tenants}/{Tenant_ID}/users</stringProp>
+          <stringProp name="HTTPSampler.path">${Tenants}/${TenantID}/users</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -5547,7 +5638,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <stringProp name="script"></stringProp>
         </BeanShellPreProcessor>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser: (Entity)P: Assign Entity to a User Present in IAM" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser: (Entity)P: Assign Entity to a User Present in IAM" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
@@ -5684,7 +5775,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <stringProp name="script"></stringProp>
         </BeanShellPreProcessor>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(Roles)P: Create a custom Entity Role " enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(Roles)P: Create a custom Entity Role " enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -5770,7 +5861,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(Roles)P: Edit a Role for Tenant" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(Roles)P: Edit a Role for Tenant" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -5847,7 +5938,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(Roles)P: Get Roles for a particular Tenant" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(Roles)P: Get Roles for a particular Tenant" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
@@ -5984,7 +6075,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <stringProp name="script"></stringProp>
         </BeanShellPreProcessor>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(User)P:Assign EntityRole to user" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(User)P:Assign EntityRole to user" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
@@ -6049,7 +6140,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(User)P:Remove EntityRole from user" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ORGAPP: SysUser:(User)P:Remove EntityRole from user" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
@@ -6541,7 +6632,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <stringProp name="script"></stringProp>
         </BeanShellPreProcessor>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OrgAdmin:(Organization)P: Get praticular Organization detail" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OrgAdmin:(Organization)P: Get praticular Organization detail" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
@@ -6606,7 +6697,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OrgAdmin:(Organization)P: Edit praticular Organization detail" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OrgAdmin:(Organization)P: Edit praticular Organization detail" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -6827,7 +6918,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <stringProp name="script"></stringProp>
         </BeanShellPreProcessor>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OrgAdmin:(Organization)P:Create Entity for the organization" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OrgAdmin:(Organization)P:Create Entity for the organization" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -6838,13 +6929,13 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
   &quot;name&quot;: &quot;Entity_${__time}&quot;,&#xd;
   &quot;address&quot;: {&#xd;
     &quot;line1&quot;: &quot;${line1}&quot;,&#xd;
-    &quot;line2&quot;: &quot;${line2}&quot;&#xd;
-    &quot;line3&quot;: &quot;${line3}&quot;&#xd;
+    &quot;line2&quot;: &quot;${line2}&quot;,&#xd;
+    &quot;line3&quot;: &quot;${line3}&quot;,&#xd;
     &quot;city&quot;: &quot;${city}&quot;,&#xd;
     &quot;state&quot;: &quot;${state}&quot;,&#xd;
     &quot;zipCode&quot;: &quot;${zipCode}&quot;,&#xd;
-    &quot;country&quot;: &quot;${country}&quot;&#xd;
-    &quot;countryCode&quot;: &quot;${countryCode}&quot;&#xd;
+    &quot;country&quot;: &quot;${country}&quot;,&#xd;
+    &quot;countryCode&quot;: &quot;${countryCode}&quot;,&#xd;
   }&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
@@ -7228,7 +7319,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <stringProp name="script"></stringProp>
         </BeanShellPreProcessor>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OrgAdmin:(Entity)P: Assign resource to the tenant" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OrgAdmin:(Entity)P: Assign resource to the tenant" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
@@ -7236,7 +7327,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <stringProp name="HTTPSampler.port">UFT-8</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">${Tenants}/${OrgTenantID}/resources/${ResourceIAM}</stringProp>
+          <stringProp name="HTTPSampler.path">${Tenants}/${TenantID}/resources/${ResourceIAM}</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -7365,7 +7456,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <stringProp name="script"></stringProp>
         </BeanShellPreProcessor>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OrgAdmin:(Organization)P:Create user for an organization" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OrgAdmin:(Organization)P:Create user for an organization" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -7376,7 +7467,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
   &quot;firstName&quot;: &quot;User_${__time}&quot;,&#xd;
   &quot;middleName&quot;: &quot;Mid_${__time}&quot;,&#xd;
   &quot;lastName&quot;: &quot;Last_${__time}&quot;,&#xd;
-  &quot;email&quot;: &quot;user${__time}@regal-us.com&quot;,&#xd;
+  &quot;email&quot;: &quot;user_${__time}@regal-us.com&quot;,&#xd;
   &quot;phoneNumber&quot;: &quot;5656565656&quot;,&#xd;
   &quot;type&quot;: &quot;${usertype2}&quot;,&#xd;
   &quot;password&quot;: &quot;${Password}&quot;,&#xd;
@@ -8172,7 +8263,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <stringProp name="script"></stringProp>
         </BeanShellPreProcessor>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="P:Create User for the entity" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="P:Create User for the entity" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -8180,12 +8271,12 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
   &quot;firstName&quot;: &quot;${__RandomString(5,ABCDEF,)}&quot;,&#xd;
-  &quot;middleName&quot;: &quot;${__RandomString(3,ABCDEF,)}&quot;&#xd;
-  &quot;lastName&quot;: &quot;${__RandomString(4,ABCDEF,)}&quot;&#xd;
-  &quot;email&quot;:&quot;${__RandomString(5,ABCDEF,)}@gmail.com&quot;&#xd;
+  &quot;middleName&quot;: &quot;${__RandomString(3,ABCDEF,)}&quot;,&#xd;
+  &quot;lastName&quot;: &quot;${__RandomString(4,ABCDEF,)}&quot;,&#xd;
+  &quot;email&quot;:&quot;${__RandomString(5,ABCDEF,)}@gmail.com&quot;,&#xd;
   &quot;phoneNumber&quot;: &quot;${__RandomString(10,123456,)}&quot;,&#xd;
   &quot;type&quot;: &quot;${type1}&quot;,&#xd;
-  &quot;password&quot;: &quot;${__RandomString(10,ABC@ef,)}&quot;,&#xd;
+  &quot;password&quot;: &quot;${Password}&quot;,&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
@@ -8195,7 +8286,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <stringProp name="HTTPSampler.port">UFT-8</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">${Tenants}/${OrgTenantID}/users</stringProp>
+          <stringProp name="HTTPSampler.path">${Tenants}/${TenantID}/users</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -8963,6 +9054,118 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
               </elementProp>
             </collectionProp>
           </HeaderManager>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Fetch Organization Details from DB" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="Fetch Organization Details from DB" enabled="true">
+          <stringProp name="dataSource">Test</stringProp>
+          <stringProp name="query">Select org.id as OrgID, Res.Name as ResourceName, r.id as RoleId, r.Name as Rolename, u.FirstName, res.id as ResourceId
+from Organizations org, OrganizationResources OrgRes, OrganizationRoles orgrole, Roles r, 
+Resources res, Users u, UserOrganizations uOrg
+where org.id = OrgRes.OrganizationId and 
+OrgRes.ResourceId = res.id  and
+org.id = orgrole.OrganizationId and 
+r.id = orgrole.RoleId and
+u.id = uOrg.UserId and 
+uOrg.OrganizationId = org.id and 
+org.id = &apos;${__property(SysGeneratedOrgID)}&apos;</stringProp>
+          <stringProp name="queryArguments"></stringProp>
+          <stringProp name="queryArgumentsTypes"></stringProp>
+          <stringProp name="queryTimeout"></stringProp>
+          <stringProp name="queryType">Select Statement</stringProp>
+          <stringProp name="resultSetHandler">Store as String</stringProp>
+          <stringProp name="resultVariable">MapId</stringProp>
+          <stringProp name="variableNames"></stringProp>
+        </JDBCSampler>
+        <hashTree>
+          <JDBCDataSource guiclass="TestBeanGUI" testclass="JDBCDataSource" testname="Fetch OrgId Details" enabled="true">
+            <stringProp name="dataSource">Test</stringProp>
+            <stringProp name="poolMax">0</stringProp>
+            <stringProp name="timeout">10000</stringProp>
+            <stringProp name="trimInterval">60000</stringProp>
+            <boolProp name="autocommit">true</boolProp>
+            <stringProp name="transactionIsolation">DEFAULT</stringProp>
+            <stringProp name="initQuery"></stringProp>
+            <boolProp name="keepAlive">true</boolProp>
+            <stringProp name="connectionAge">5000</stringProp>
+            <stringProp name="checkQuery"></stringProp>
+            <stringProp name="dbUrl">jdbc:sqlserver://regalpaycloudfilexchange-dev.crbrwfnrabqu.us-west-2.rds.amazonaws.com:1433;DatabaseName=IAMBetaTestDB</stringProp>
+            <stringProp name="driver">com.microsoft.sqlserver.jdbc.SQLServerDriver</stringProp>
+            <stringProp name="username">admin</stringProp>
+            <stringProp name="password">Regal123</stringProp>
+          </JDBCDataSource>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion for fetching Organization Details" enabled="false">
+            <stringProp name="BeanShellAssertion.query">import org.apache.jmeter.services.FileServer;
+
+try {
+	 String path = FileServer.getFileServer().getBaseDir();
+	f = new FileOutputStream(path+vars.get(&quot;FilePath1&quot;), false); 
+          p = new PrintStream(f);
+          this.interpreter.setOut(p);
+if(ResponseCode.equals(&quot;200&quot;)) 
+{
+          
+for (int i; i &lt;vars.getObject (&quot;MapId&quot;). size (); i ++)
+{
+	if(vars.getObject(&quot;MapId&quot;).size() != 0)
+	{
+
+		String MID = vars.getObject(&quot;MapId&quot;).get(i).get(&quot;MappingID&quot;) + &quot;&quot;;
+		vars.put(&quot;MappingID&quot;, MID);
+		
+		log.info(&quot; value of Id :  &quot; + MID);
+		
+          print(MID);	
+	} 
+	else 
+	{
+	
+		FailureMessage = &quot;!!!!!!!!!!!! The response is empty !!!!!!!!!!!!!&quot;;
+		Failure = true;	
+		prev.setStopThread(true); 
+	}
+}
+}	
+	
+else {
+	
+	FailureMessage = &quot;!!!!!!!!!!!! No connection to the database !!!!!!!!!!!!!&quot;;
+	Failure = true;	
+	prev.setStopThread(true); 
+}
+}
+catch (Throwable ex) {
+    log.error(&quot;Error in beanshell&quot;, ex);
+    throw ex;
+}
+
+
+//for (int i; i &lt;vars.getObject (&quot;dataFromDB&quot;). size (); i ++)</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="Beanshell for setproperty" enabled="false">
+            <stringProp name="BeanShellAssertion.query">${__setProperty(InputFieldID, ${InputFieldID})};</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
           <hashTree/>
         </hashTree>
       </hashTree>
