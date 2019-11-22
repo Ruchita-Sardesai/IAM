@@ -92,7 +92,7 @@
           </elementProp>
           <elementProp name="zipCode" elementType="Argument">
             <stringProp name="Argument.name">zipCode</stringProp>
-            <stringProp name="Argument.value">12345</stringProp>
+            <stringProp name="Argument.value">560120</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="country" elementType="Argument">
@@ -148,6 +148,11 @@
           <elementProp name="ApplicationRole" elementType="Argument">
             <stringProp name="Argument.name">ApplicationRole</stringProp>
             <stringProp name="Argument.value">/api/iam/v1/applicationrole</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="Token" elementType="Argument">
+            <stringProp name="Argument.name">Token</stringProp>
+            <stringProp name="Argument.value">/api/iam/v1/token/</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="------------------------------------" elementType="Argument">
@@ -245,14 +250,9 @@
             <stringProp name="Argument.value">TenantId</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="usertype1" elementType="Argument">
-            <stringProp name="Argument.name">usertype1</stringProp>
-            <stringProp name="Argument.value">System</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
-          <elementProp name="usertype2" elementType="Argument">
-            <stringProp name="Argument.name">usertype2</stringProp>
-            <stringProp name="Argument.value">Application</stringProp>
+          <elementProp name="Organization_ID" elementType="Argument">
+            <stringProp name="Argument.name">Organization_ID</stringProp>
+            <stringProp name="Argument.value">36DCF07D-F418-4FE8-9D9F-1F91D97456FB</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
