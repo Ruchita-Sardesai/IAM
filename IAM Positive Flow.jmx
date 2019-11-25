@@ -182,12 +182,12 @@
           </elementProp>
           <elementProp name="SysPermissionID" elementType="Argument">
             <stringProp name="Argument.name">SysPermissionID</stringProp>
-            <stringProp name="Argument.value">61BA9B06-AB67-4982-A175-A714E4226DE7</stringProp>
+            <stringProp name="Argument.value">46FD9799-7B23-4E00-9068-05A4A8603FEB</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="AppPermissionID" elementType="Argument">
             <stringProp name="Argument.name">AppPermissionID</stringProp>
-            <stringProp name="Argument.value">6972E178-0228-4347-B7FF-D1211DD26F92</stringProp>
+            <stringProp name="Argument.value">BAB46C0F-4A64-4D23-8996-3C12A21B2662</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="-------------------------------" elementType="Argument">
@@ -212,12 +212,12 @@
           </elementProp>
           <elementProp name="ClaimType1" elementType="Argument">
             <stringProp name="Argument.name">ClaimType1</stringProp>
-            <stringProp name="Argument.value">Organization ID</stringProp>
+            <stringProp name="Argument.value">OrganizationId</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="ClaimType2" elementType="Argument">
             <stringProp name="Argument.name">ClaimType2</stringProp>
-            <stringProp name="Argument.value">Tenant ID</stringProp>
+            <stringProp name="Argument.value">TenantId</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -2895,15 +2895,6 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">false</stringProp>
-            <stringProp name="RegexExtractor.refname">ResourceID1</stringProp>
-            <stringProp name="RegexExtractor.regex">&quot;response&quot;: &quot;(.+?)&quot;;</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">0</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-          </RegexExtractor>
-          <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code200" enabled="true">
             <collectionProp name="Asserion.test_strings">
               <stringProp name="-1146597565">${Response200}</stringProp>
@@ -3031,7 +3022,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <stringProp name="HTTPSampler.port">UFT-8</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">${Resources}/${ResourceID1}/permissions</stringProp>
+          <stringProp name="HTTPSampler.path">${Resources}/${TenantResource}/permissions</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3114,7 +3105,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <stringProp name="HTTPSampler.port">UFT-8</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">${Resources}/${ResourceID1}</stringProp>
+          <stringProp name="HTTPSampler.path">${Resources}/${TenantResource}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3416,9 +3407,9 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
                 <stringProp name="Argument.value">{&#xd;
   &quot;name&quot;: &quot;Rtest_${__time}&quot;,&#xd;
   &quot;type&quot;: &quot;${type1}&quot;,&#xd;
-  &quot;resourceId&quot;: &quot;${ResourceID1}&quot;,&#xd;
+  &quot;resourceId&quot;: &quot;${TenantResource}&quot;,&#xd;
   &quot;permissions&quot;: [&#xd;
-    &quot;${PermissionID1}&quot;&#xd;
+    &quot;${AppPermissionID}&quot;&#xd;
   ]&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
@@ -4085,7 +4076,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ORG APP: SystemApp User(Assigned to any Org)_Positive Flow(Only Org)" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ORG APP: SystemApp User(Assigned to any Org)_Positive Flow(Only Org)" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -6732,7 +6723,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ORG APP: SystemApp User(Assigned to any Org)_Positive Flow(Both Org and Entity)" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ORG APP: SystemApp User(Assigned to any Org)_Positive Flow(Both Org and Entity)" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -9379,7 +9370,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ORG APP: SystemApp User(Assigned to any Org)_Positive Flow(Only Entity)" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ORG APP: SystemApp User(Assigned to any Org)_Positive Flow(Only Entity)" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -12026,7 +12017,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ORG APP: OrgAdmin_Positive Flow(Only Org)" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ORG APP: OrgAdmin_Positive Flow(Only Org)" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -14966,7 +14957,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ORG APP: OrgAdmin_Positive Flow(Both Org and Entity)" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ORG APP: OrgAdmin_Positive Flow(Both Org and Entity)" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -17906,7 +17897,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ORG APP: OrgAdmin_Positive Flow(Only Tenat)" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ORG APP: OrgAdmin_Positive Flow(Only Tenat)" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -20846,7 +20837,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Fetch Organization Details from DB" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Fetch Organization Details from DB" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -20958,7 +20949,7 @@ catch (Throwable ex) {
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ORG APP: AppUser With no permissions(403)_Positive Flow" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ORG APP: AppUser With no permissions(403)_Positive Flow" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -24780,7 +24771,7 @@ catch (Throwable ex) {
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ORG APP: AppUser With NoToken(401)_Positive Flow" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ORG APP: AppUser With NoToken(401)_Positive Flow" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
