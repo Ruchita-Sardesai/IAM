@@ -1694,7 +1694,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
         </HTTPSamplerProxy>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SYSTEM APP: SystemApp User_Positive Flow(No Org No Entity)" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SYSTEM APP: SystemApp User_Positive Flow(No Org No Entity)" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -1797,7 +1797,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="SYSAPP: sysuser:(Client)P: Create a client" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="SYSAPP: sysuser:(Client)P: Create a client" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -1818,7 +1818,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
     &quot;http://localhost:4200/&quot;&#xd;
   ], &#xd;
   &quot;grantType&quot;: [&#xd;
-    &quot;password&quot;&#xd;
+    &quot;client_credentials&quot;&#xd;
   ],&#xd;
   &quot;clientSecret&quot;: [&#xd;
     &quot;secret&quot;&#xd;
@@ -1887,6 +1887,15 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
             <boolProp name="Assertion.assume_success">false</boolProp>
             <intProp name="Assertion.test_type">2</intProp>
           </ResponseAssertion>
+          <hashTree/>
+          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+            <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+            <stringProp name="RegexExtractor.refname">Client </stringProp>
+            <stringProp name="RegexExtractor.regex"></stringProp>
+            <stringProp name="RegexExtractor.template"></stringProp>
+            <stringProp name="RegexExtractor.default"></stringProp>
+            <stringProp name="RegexExtractor.match_number"></stringProp>
+          </RegexExtractor>
           <hashTree/>
         </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="SYSAPP: sysuser:(Client)P: Update a client" enabled="false">
@@ -2046,7 +2055,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="SYSAPP: sysuser:(Client)P: Add scopes to a client " enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="SYSAPP: sysuser:(Client)P: Add scopes to a client " enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -2054,7 +2063,9 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
   &quot;scopes&quot;: [&#xd;
-    &quot;Test.Readonly&quot;&#xd;
+    &quot;Test.Readonly&quot;,&#xd;
+    &quot;Test.Edit&quot;,&#xd;
+    &quot;Test.View&quot;,&#xd;
   ]&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
@@ -2065,7 +2076,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           <stringProp name="HTTPSampler.port">UFT-8</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">${Clients}/clientId/scopes?clientId=${ClientName}</stringProp>
+          <stringProp name="HTTPSampler.path">${Clients}/clientId/scopes?clientId=NC_1574766613187</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3012,7 +3023,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
   &quot;name&quot;: &quot;Test.Permission_${ID}&quot;,&#xd;
-  &quot;type&quot;: ${type2}&#xd;
+  &quot;type&quot;: ${type2},&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
