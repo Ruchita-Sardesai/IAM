@@ -24232,86 +24232,6 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           </collectionProp>
         </Arguments>
         <hashTree/>
-        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Client level User Defined Variables" enabled="true">
-          <collectionProp name="Arguments.arguments">
-            <elementProp name="Client_URL" elementType="Argument">
-              <stringProp name="Argument.name">Client_URL</stringProp>
-              <stringProp name="Argument.value">/api/iam/v1/clients</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="Auth" elementType="Argument">
-              <stringProp name="Argument.name">Auth</stringProp>
-              <stringProp name="Argument.value">/connect/authorize</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="callback" elementType="Argument">
-              <stringProp name="Argument.name">callback</stringProp>
-              <stringProp name="Argument.value">/auth-callback</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="Access" elementType="Argument">
-              <stringProp name="Argument.name">Access</stringProp>
-              <stringProp name="Argument.value">/connect/token</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="Username_1" elementType="Argument">
-              <stringProp name="Argument.name">Username_1</stringProp>
-              <stringProp name="Argument.value">admin@regal-us.com</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="Password_1" elementType="Argument">
-              <stringProp name="Argument.name">Password_1</stringProp>
-              <stringProp name="Argument.value">Narayan@123</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="Username_2" elementType="Argument">
-              <stringProp name="Argument.name">Username_2</stringProp>
-              <stringProp name="Argument.value">admin@regal-us.com</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="Password_2" elementType="Argument">
-              <stringProp name="Argument.name">Password_2</stringProp>
-              <stringProp name="Argument.value">Narayan@123</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="Username_3" elementType="Argument">
-              <stringProp name="Argument.name">Username_3</stringProp>
-              <stringProp name="Argument.value">orgad@regal-us.com</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="Password_3" elementType="Argument">
-              <stringProp name="Argument.name">Password_3</stringProp>
-              <stringProp name="Argument.value">OrgAd@1234</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="Username_4" elementType="Argument">
-              <stringProp name="Argument.name">Username_4</stringProp>
-              <stringProp name="Argument.value">Narayan@regal-us.com</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="Password_4" elementType="Argument">
-              <stringProp name="Argument.name">Password_4</stringProp>
-              <stringProp name="Argument.value">Narayan@123</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="Username_5" elementType="Argument">
-              <stringProp name="Argument.name">Username_5</stringProp>
-              <stringProp name="Argument.value">user1574337641895@regal-us.com</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="Password_5" elementType="Argument">
-              <stringProp name="Argument.name">Password_5</stringProp>
-              <stringProp name="Argument.value">Test@1234</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="RedirectUrl" elementType="Argument">
-              <stringProp name="Argument.name">RedirectUrl</stringProp>
-              <stringProp name="Argument.value">http://localhost:4200/auth-callback</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-          </collectionProp>
-        </Arguments>
-        <hashTree/>
         <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="Client " enabled="false">
           <stringProp name="filename"></stringProp>
           <stringProp name="parameters"></stringProp>
@@ -25478,9 +25398,9 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
               <stringProp name="Argument.value">e6fc8fb5-dcc1-4b51-9e97-1d9b0605849a</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
-            <elementProp name="Tenant_ID" elementType="Argument">
-              <stringProp name="Argument.name">Tenant_ID</stringProp>
-              <stringProp name="Argument.value">c79c9ea1-3052-478b-9c03-c1981ed8008a</stringProp>
+            <elementProp name="Permission2" elementType="Argument">
+              <stringProp name="Argument.name">Permission2</stringProp>
+              <stringProp name="Argument.value">b76d433e-3138-4feb-ad5f-ae8baa02ff97</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
@@ -25661,7 +25581,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
 &#xd;
-  &quot;name&quot;: &quot;Entity_${__time}&quot;,&#xd;
+  &quot;name&quot;: &quot;FLXEntity2_${__time}&quot;,&#xd;
   &quot;address&quot;: {&#xd;
     &quot;line1&quot;: &quot;${line1}&quot;,&#xd;
     &quot;line2&quot;: &quot;${line2}&quot;,&#xd;
@@ -25747,7 +25667,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OrgAPP: Assign resource to the Entity" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OrgAPP: Assign resource to the Entity" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
@@ -25812,16 +25732,17 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OrgAPP: Create a Entity Role " enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OrgAPP: Create a Entity Role " enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;name&quot;: &quot;TenantRole_${__time}&quot;,&#xd;
+  &quot;name&quot;: &quot;FLXTenantRole2_${__time}&quot;,&#xd;
   &quot;permissions&quot;: [&#xd;
-    &quot;${Permission1}&quot;&#xd;
+    &quot;${Permission1}&quot;,&#xd;
+    &quot;${Permission2}&quot;,&#xd;
   ]&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
@@ -25913,6 +25834,97 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
       &quot;id&quot;: &quot;${Tenant_ID}&quot;,&#xd;
       &quot;roles&quot;: [&#xd;
        &quot;${EntityRoleID}&quot;,&#xd;
+      ]&#xd;
+    }&#xd;
+  ]&#xd;
+}&#xd;
+</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${SwaggerURL}</stringProp>
+          <stringProp name="HTTPSampler.port">UFT-8</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${Organizations}/${OrgID}/users/${UserID}/manage-user</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion-Status 1" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1514160316">&quot;${__property(requestStatus)}&quot;: 1</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">true</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code200" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1146597565">${Response200}</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">true</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json; charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Cache-Control" elementType="Header">
+                <stringProp name="Header.name">Cache-Control</stringProp>
+                <stringProp name="Header.value">no-cache</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${__property(OrgAdmin_Access_Token3)}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OrgAPP: Add entity role to user(Multiple)" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;roles&quot;: [&#xd;
+    &quot;${AdminRole}&quot;,&#xd;
+  ],&#xd;
+  &quot;tenants&quot;: [&#xd;
+    {&#xd;
+      &quot;id&quot;: &quot;750dbc52-4d67-487d-8005-7702dc2b7295&quot;,&#xd;
+      &quot;roles&quot;: [&#xd;
+       &quot;d3caeac4-0e44-4674-a0e6-a4f486c8a046&quot;,&#xd;
+      ]&#xd;
+    },&#xd;
+     {&#xd;
+      &quot;id&quot;: &quot;098EA603-A787-4C41-B4CF-EE81AE09AEFD&quot;,&#xd;
+      &quot;roles&quot;: [&#xd;
+       &quot;6400666C-1CF3-41B5-A7E5-5634046D33B9&quot;,&#xd;
       ]&#xd;
     }&#xd;
   ]&#xd;
