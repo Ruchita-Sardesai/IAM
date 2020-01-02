@@ -739,7 +739,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
               </elementProp>
               <elementProp name="scope" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">iam:view:tenant-roles iam:view:org iam:manage:org iam:view:tenant iam:manage:org-users iam:manage:tenant iam:manage:org-roles iam:manage:tenant-roles iam:view:org-roles iam:view:tenant-users iam:view:org-users iam:add:clients iam:manage:tenant-users</stringProp>
+                <stringProp name="Argument.value">iam:view:tenant-roles iam:view:org iam:manage:org iam:view:tenant iam:manage:org-users iam:manage:tenant iam:manage:org-roles iam:manage:tenant-roles iam:view:org-roles iam:view:tenant-users iam:view:org-users iam:manage:tenant-users</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">scope</stringProp>
@@ -808,12 +808,12 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           </BeanShellAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Password grant type_OrgAPP: SystemAppUser: Login Request (Only Entity)" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Password grant type_OrgAPP: SystemAppUser: Login Request (Only Entity)" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="client_id" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">jMeter</stringProp>
+                <stringProp name="Argument.value">Postman</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">client_id</stringProp>
@@ -834,28 +834,28 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
               </elementProp>
               <elementProp name="scope" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">iam:add:clients iam:manage:application-roles iam:manage:application-users iam:manage:clients iam:manage:org iam:manage:organizations iam:manage:org-roles iam:manage:org-users iam:manage:resources iam:manage:system-roles iam:manage:system-users iam:manage:tenant iam:manage:tenant-roles iam:manage:tenants iam:manage:tenant-users iam:view:application-roles iam:view:application-users iam:view:clients iam:view:org iam:view:organizations iam:view:org-roles iam:view:org-users iam:view:resources iam:view:system-roles iam:view:system-users iam:view:tenant iam:view:tenant-roles iam:view:tenants iam:view:tenant-users</stringProp>
+                <stringProp name="Argument.value">iam:view:tenant-roles iam:view:org iam:manage:org iam:view:tenant iam:manage:org-users iam:manage:tenant iam:manage:org-roles iam:manage:tenant-roles iam:view:org-roles iam:view:tenant-users iam:view:org-users iam:manage:tenant-users</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">scope</stringProp>
               </elementProp>
               <elementProp name="username" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">abhishek@regal-us.com</stringProp>
+                <stringProp name="Argument.value">${Username_1}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">username</stringProp>
               </elementProp>
               <elementProp name="password" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">Abhi@123</stringProp>
+                <stringProp name="Argument.value">${Password_1}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">password</stringProp>
               </elementProp>
               <elementProp name="acr_values" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">tenant:6CA91569-C0CF-491B-85AE-820B14BF716B</stringProp>
+                <stringProp name="Argument.value">tenant:E85F3E31-2270-4836-BE27-5DBDCE00CF54</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">acr_values</stringProp>
@@ -903,7 +903,7 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
           </BeanShellAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Password grant type_OrgAPP: SystemAppUser: Login Request (Both Org and Entity)" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Password grant type_OrgAPP: SystemAppUser: Login Request (Both Org and Entity)" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="client_id" elementType="HTTPArgument">
@@ -929,28 +929,28 @@ ${__setProperty(UserNotAuthorized, ${UserNotAuthorized})};
               </elementProp>
               <elementProp name="scope" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">iam:add:clients iam:manage:application-roles iam:manage:application-users iam:manage:clients iam:manage:org iam:manage:organizations iam:manage:org-roles iam:manage:org-users iam:manage:resources iam:manage:system-roles iam:manage:system-users iam:manage:tenant iam:manage:tenant-roles iam:manage:tenants iam:manage:tenant-users iam:view:application-roles iam:view:application-users iam:view:clients iam:view:org iam:view:organizations iam:view:org-roles iam:view:org-users iam:view:resources iam:view:system-roles iam:view:system-users iam:view:tenant iam:view:tenant-roles iam:view:tenants iam:view:tenant-users</stringProp>
+                <stringProp name="Argument.value">iam:view:application-users  iam:manage:system-users iam:view:system-users  iam:manage:application-roles iam:view:application-roles  iam:manage:system-roles  iam:view:system-roles  iam:manage:organizations iam:view:organizations iam:manage:tenants iam:view:tenants iam:manage:clients  iam:view:clients  iam:manage:resources  iam:view:resources  openid iam:view:tenant-roles  iam:view:org iam:manage:org iam:view:tenant  iam:manage:org-users  iam:manage:tenant  iam:manage:org-roles  iam:manage:tenant-roles  iam:view:org-roles  iam:view:tenant-users  iam:view:org-users  iam:manage:tenant-users</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">scope</stringProp>
               </elementProp>
               <elementProp name="username" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">abhishek@regal-us.com</stringProp>
+                <stringProp name="Argument.value">${Username_1}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">username</stringProp>
               </elementProp>
               <elementProp name="password" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">Abhi@123</stringProp>
+                <stringProp name="Argument.value">${Password_1}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">password</stringProp>
               </elementProp>
               <elementProp name="acr_values" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">organization:0c8460d8-4f04-4cd2-8464-69a0b3c4929e tenant:6CA91569-C0CF-491B-85AE-820B14BF716B</stringProp>
+                <stringProp name="Argument.value">organization:86D96B1A-2DFD-47FA-8F1D-A9A48EF9CCEA tenant:E85F3E31-2270-4836-BE27-5DBDCE00CF54</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">acr_values</stringProp>
