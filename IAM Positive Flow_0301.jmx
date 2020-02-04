@@ -10,7 +10,7 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="URL" elementType="Argument">
             <stringProp name="Argument.name">URL</stringProp>
-            <stringProp name="Argument.value">ids.qa.regalpayone.com</stringProp>
+            <stringProp name="Argument.value">qa.ids.regalpayone.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="URL1" elementType="Argument">
@@ -20,7 +20,7 @@
           </elementProp>
           <elementProp name="SwaggerURL" elementType="Argument">
             <stringProp name="Argument.name">SwaggerURL</stringProp>
-            <stringProp name="Argument.value">iam.qa.regalpayone.com</stringProp>
+            <stringProp name="Argument.value">qa.api.regalpayone.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
